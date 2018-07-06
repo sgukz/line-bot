@@ -1,4 +1,5 @@
 <?php
+include('connect.php');
 /*session_start();
 include('connect.php');
 if (isset($_GET['regis'])) {
