@@ -35,7 +35,8 @@ if (!is_null($events['events'])) {
 					"type" => "button" ,
 					"margin" => "sm",
 					"action" => $action_footer_1,
-					"style" => "secondary"
+					"style" => "primary"
+					//"style" => "secondary"
 				];
 				$content_body1 = [
 					"type" => "text" ,
