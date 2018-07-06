@@ -71,7 +71,7 @@ document.login.lineid.focus();
           <?php
           //if (isset($_GET['regis'])) {
             ?>
-            <input type="text" name="userId" value="<?= $userId ?>">
+            <input type="text" name="userId" value="">
             <?php 
           //} ?>
               <input class="submit"  type="submit"  name="submit" value="ตกลง" data-role="button" data-theme="b" />
