@@ -4,6 +4,7 @@ if (isset($_GET['regis'])) {
   $userId = $_GET['regis'];
   $CHK_userId = mysql_query("SELECT * FROM tb_regis_line_bot WHERE userId = '$userId'");
   $NUM_rows = mysql_num_rows($CHK_userId);
+  echo "Hi";
 }
   
 //include('Connections/dbnurse.php'); ?>
