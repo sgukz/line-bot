@@ -1,10 +1,5 @@
 <?php
 include('connect.php');
-if (isset($_GET['regis'])) {
-  $userId = $_GET['regis'];
-  $CHK_userId = mysql_query("SELECT * FROM tb_regis_line_bot WHERE userId = '$userId'");
-  $NUM_rows = mysql_num_rows($CHK_userId);
-}
 /*session_start();
 include('connect.php');
 if (isset($_GET['regis'])) {
