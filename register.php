@@ -1,13 +1,14 @@
-<?php session_start();
+<?php
+/*session_start();
 include('connect.php');
 if (isset($_GET['regis'])) {
   $userId = $_GET['regis'];
   $CHK_userId = mysql_query("SELECT * FROM tb_regis_line_bot WHERE userId = '$userId'");
   $NUM_rows = mysql_num_rows($CHK_userId);
   echo "Hi";
-}
+}*/
   
-//include('Connections/dbnurse.php'); ?>
+?>
 <html>
   <head>
   <meta charset="utf-8">
@@ -38,12 +39,12 @@ document.login.lineid.focus();
 <?php echo "สำนักงานปลัดกระทรวงสาธารณสุข"; ?></font><br>
 <h2><font color=" #009900">ลงทะเบียนแจ้งเตือนเงินเดือนบุคคลากร<br>ผ่าน LINE@</font></h2><br><br>
 <?php
-if (isset($_GET['regis'])) {
-  if ($NUM_rows > 0) {
+/*if (isset($_GET['regis'])) {
+  if ($NUM_rows > 0) {*/
     ?>
 <h2><font color="red"><<< </font><font color=" #009900">ท่านลงทะเบียนแล้ว</font><font color="red"> >>></font></h2>
 <?php 
-} else {
+//} else {
 
   ?>
  <form method="POST" action="check_regis.php" name=login  data-ajax="false" autocomplete="off" >
@@ -68,11 +69,11 @@ if (isset($_GET['regis'])) {
         <td >
           <font color=" #009900">
           <?php
-          if (isset($_GET['regis'])) {
+          //if (isset($_GET['regis'])) {
             ?>
             <input type="text" name="userId" value="<?= $userId ?>">
             <?php 
-          } ?>
+          //} ?>
               <input class="submit"  type="submit"  name="submit" value="ตกลง" data-role="button" data-theme="b" />
           </font>
         </td>
@@ -80,7 +81,7 @@ if (isset($_GET['regis'])) {
 </table>
       </form>
             <?php 
-          }
-        }
+         // }
+        //}
         ?>
 </center>
