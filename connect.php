@@ -7,5 +7,5 @@ if (!$CONNECT_DB) {
 } else {
     mysql_select_db("db_itreh");
     mysql_query("SET NAMES UTF8");
-    echo "Connected";
+    //echo "Connected";
 }
