@@ -31,7 +31,7 @@ document.login.lineid.focus();
 <br>
 <center><br><img src="logo.png" alt="โลโก้" height="80" width="80" >
   <h2><font color ="green" >โรงพยาบาลร้อยเอ็ด</h2>
-<?php //echo "สำนักงานปลัดกระทรวงสาธารณสุข"; ?></font><br>
+<?php //echo "สำนักงานปลัดกระทรวงสาธารณสุข"; ?></font>
 <h2><font color=" #009900">ลงทะเบียนแจ้งเตือนเงินเดือนบุคคลากร<br>ผ่าน LINE@</font></h2>
  <form method="POST" action="index2.php" name=login  data-ajax="false" autocomplete="off" >
 <table border="0" width =95%>       
@@ -40,7 +40,7 @@ document.login.lineid.focus();
           <label>
           <font color=" #009900"> เลขบัตรประชาชน 13 หลัก </font><font color="red">*</font>
           </label>
-          <input type="text"  name="line_id"  placeholder="เลขบัตรประชาชน 13 หลัก" required  data-clear-btn="false" value=""   />
+          <input type="text"  name="line_id"  placeholder="เลขบัตรประชาชน 13 หลัก" required  data-clear-btn="false" value=""/>
       </td>
     </tr>
     <tr>
@@ -54,7 +54,7 @@ document.login.lineid.focus();
     <tr>
         <td >
           <font color=" #009900">
-            <input type="text" name="userId" value="<?= $userId ?>">
+            <input type="hidden" name="userId" value="<?= $userId ?>">
               <input class="submit"  type="submit"  name="submit" value="ตกลง" data-role="button" data-theme="b" />
           </font>
         </td>
