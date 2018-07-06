@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 				$action_footer_1 = [
 					"type" =>"uri" ,
 					"label" =>"ยืนยันลงทะเบียน" ,
-					"uri" => "https://line-bot-sg.herokuapp.com/register.php?regis=$text"
+					"uri" => "http://61.19.254.3/comcenter/line-bot/register.php?regis=$text"
 				];
 				$content_footer_1 = [
 					"type" => "button" ,
